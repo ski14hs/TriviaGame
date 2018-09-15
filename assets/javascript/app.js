@@ -143,7 +143,11 @@ $(document).ready(function(){
                 //else time out
                 answersTimed++;
                 questionsAsked++;
-                $(".question").append($("<h3>").text("Time Up!"));
+                $(".question").prepend($("<h3>").text("Time Up!"));
+                //highlight correct
+                $(".correct").attr("class", "btn btn-success");
+                //disable buttons from answering again
+                $(".answerBtn").attr("class", "btn");
                 resultTimer();
                 
             }
@@ -158,11 +162,11 @@ $(document).ready(function(){
         if (answerVal === questions[questionsAsked].answer){
             //answered correctly
             answersCorrect++;
-            $(".question").append($("<h3>").text("Correct!"));
+            $(".question").prepend($("<h3>").text("Correct!"));
         } else {
             //answered incorrectly
             answersWrong++;
-            $(".question").append($("<h3>").text("Sorry, Wrong Answer!"));
+            $(".question").prepend($("<h3>").text("Sorry, Wrong Answer!"));
             //mark correct one?
         }
         //increment question
