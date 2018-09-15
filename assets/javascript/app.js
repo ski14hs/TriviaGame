@@ -87,6 +87,7 @@ $(document).ready(function(){
         //clear previous or start button
         $(".question").empty();
         $(".answers").empty();
+        $(".timer").empty();
         //if no more questions display results
         if( questionsAsked === questions.length){
             //display results and stop
