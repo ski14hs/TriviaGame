@@ -12,7 +12,7 @@ $(document).ready(function(){
         answer: "Coco"
     },
     {
-        question: "What Pixar movie features a company harvesting energy from screems?",
+        question: "What Pixar movie features a company harvesting energy from screams?",
         answers: ["Coco", "Monsters Inc.", "Finding Nemo", "Brave"],
         answer: "Monsters Inc."
     },
