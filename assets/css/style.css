@@ -1,0 +1,20 @@
+body{
+    background-image: url("../images/pixar-movies.jpg")
+    /* https://amazingpict.com/wp-content/uploads/2015/04/pixar-movies.jpg */
+}
+
+div{
+    /* border: solid red 2px; */
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.question{
+    padding: 20px;
+}
+
+.answers{
+    padding: 20px;
+}
